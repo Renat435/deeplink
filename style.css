@@ -9,11 +9,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 
-a {
+.link {
     background: green;
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
+    text-decoration: none;
 }
