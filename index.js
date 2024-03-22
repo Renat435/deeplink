@@ -7,4 +7,11 @@ document.addEventListener('DOMContentLoaded', () => {
             window.location.href = "intent://ru.sberbankmobile/payments/p2p?type=phone_number&phoneNumber=+79889368516"
         }
     });
+    const isMobile = navigator.userAgentData.mobile;
+
+    if(isMobile) {
+        document.getElementById('qr').remove();
+    } else {
+        document.getElementById('link').remove();
+    }
 });

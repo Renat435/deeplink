@@ -9,39 +9,13 @@
     <title>Deeplink</title>
 </head>
 <body>
-    <button class="link">
+    <button id="link" class="link">
         Pi pi pu pu uuu
     </button>
 
-    <a href="sberbankonline://payments/p2p-by-phone-number?phoneNumber=+79889368516">
-        1
-    </a>
-
-    <a href="intent://ru.sberbankmobile/payments/p2p?type=phone_number&phoneNumber=+79889368516">
-        2
-    </a>
-
-    <a href="intent://ru.sberbankmobile/payments/p2p?type=phone_number&phoneNumber=+79889368516">
-        3
-    </a>
-
-    <a href="intent://ru.sberbankmobile/payments/p2p?type=phone_number&number=+79889368516">
-        4
-    </a>
-
-    <a href="intent://payments/p2p-by-phone-number?phoneNumber=+79889368516">
-        5
-    </a>
-
-    <br>
-
-    <a href="android-app://ru.sberbankmobile/android-app/ru.sberbankmobile/payments/p2p-by-phone-number?phoneNumber=+79889368516">
-        6
-    </a>
-
-    <a href="sberbankid://payments/p2p-by-phone-number?phoneNumber=+79889368516">
-        7
-    </a>
+    <div id="qr" class="qr">
+        <img  src="qr-code.svg" alt="qr-code">
+    </div>
 
     <script src="index.js"></script>
 </body>
