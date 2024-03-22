@@ -11,11 +11,11 @@ document.addEventListener('DOMContentLoaded', () => {
             window.location.href = "intent://ru.sberbankmobile/payments/p2p?type=phone_number&phoneNumber=+79889368516"
         }
     });
-    const isMobile = navigator.userAgentData.mobile;
+    const isMobile = navigator?.userAgentData?.mobile;
 
     console.log(link, qr)
 
-    if(isMobile) {
+    if(!!isMobile) {
         qr.remove();
     } else {
         link.remove();
