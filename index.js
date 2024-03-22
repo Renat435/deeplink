@@ -2,11 +2,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const link = document.getElementById('link');
     const qr = document.getElementById('qr');
-    const isMobile = navigator.userAgentData.mobile;
 
-    alert(isMobile);
-
-    if(!!isMobile) {
+    if (/Android|iPhone/i.test(navigator.userAgent)) {
         qr.remove();
     } else {
         link.remove();
