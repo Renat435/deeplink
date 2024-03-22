@@ -10,11 +10,11 @@
 <body>
     <script>
         if (navigator.userAgent.includes("iPhone")) {
-            window.location.href = "sbolonline://payments/p2p-by-phone-number?phoneNumber=+79889368516";
-            setTimeout(() => window.location.href = "sberbankonline://payments/p2p-by-phone-number?phoneNumber=+79889368516", 100);
+            window.location.href = "sbolonline://messenger/dialog-for-phone?phone=+79889368516&tab=payments";
+            setTimeout(() => window.location.href = "sberbankonline://messenger/dialog-for-phone?phone=+79889368516&tab=payments", 100);
         } else {
-            window.location.href = "sberbankonline://payments/p2p-by-phone-number?phoneNumber=+79889368516";
-            setTimeout(() => window.location.href = "intent://ru.sberbankmobile/payments/p2p?type=phone_number&phoneNumber=+79889368516", 100);
+            window.location.href = "sberbankonline://messenger/dialog-for-phone?phone=+79889368516&tab=payments";
+            setTimeout(() => window.location.href = "intent://ru.sberbankmobile/messenger/dialog-for-phone?phone=+79889368516&tab=payments", 100);
         }
     </script>
 </body>
