@@ -1,5 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
-    document.querySelector('.link').addEventListener('click', () => {
+
+    const link = document.getElementById('link');
+    const qr = document.getElementById('qr');
+
+    link.addEventListener('click', () => {
         if (navigator.userAgent.includes("iPhone")) {
             window.location.href = "sbolonline://payments/p2p-by-phone-number?phoneNumber=+79889368516";
             setTimeout(() => window.location.href = "sberbankonline://payments/p2p-by-phone-number?phoneNumber=+79889368516", 100);
@@ -9,9 +13,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     const isMobile = navigator.userAgentData.mobile;
 
+    console.log(link, qr)
+
     if(isMobile) {
-        document.getElementById('qr').remove();
+        qr.remove();
     } else {
-        document.getElementById('link').remove();
+        link.remove();
     }
 });
